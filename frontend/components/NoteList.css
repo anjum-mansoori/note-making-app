@@ -1,0 +1,88 @@
+.container-list {
+    display: flex;
+    padding: 20px;
+    border: dotted 3px rgb(138, 138, 255);
+    margin: 20px auto;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    min-height: 60vh;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px;
+    border: solid 1px rgb(138, 138, 255);
+    border-radius: 5px;
+    width: 350px;
+    height: 200px;
+    color: black;
+    justify-content: space-between;
+}
+
+.items:hover {
+    box-shadow: 0 0 10px rgba(138, 138, 255, 0.5);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+.items h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.items p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    flex-grow: 1;
+    /* takes available space */
+    overflow: hidden;
+}
+
+.items .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom span {
+    font-size: 20px;
+}
+
+.bottom span i {
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: solid 1px rgb(138, 138, 255);
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.button {
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+}
+
+.bottom .del {
+    color: rgb(255, 34, 34);
+}
+
+.bottom .edit {
+    color: rgb(138, 138, 255);
+}
+
+.bottom .time {
+    font-size: 17px;
+    color: rgb(80, 80, 80);
+}
+
+mark {
+    background-color: yellow;
+    padding: 2px 4px;
+    border-radius: 3px;
+}

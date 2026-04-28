@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    padding: 20px;
+    border: dotted 3px rgb(138, 138, 255);
+    margin: 20px auto;
+    border-radius: 7px;
+    width: 80%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.forms input {
+    padding: 8px;
+    width: 800px;
+    font-size: 17px;
+    border: solid 1px rgb(138, 138, 255);
+    border-radius: 5px;
+    outline: none;
+}
+
+.forms textarea {
+    padding: 8px;
+    width: 800px;
+    font-size: 17px;
+    height: 130px;
+    border: solid 1px rgb(138, 138, 255);
+    border-radius: 5px;
+    outline: none;
+}
+
+.add-btn {
+    padding: 8px;
+    margin: 12px 0 0 820px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(131, 32, 253);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

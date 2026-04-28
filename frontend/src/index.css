@@ -1,0 +1,26 @@
+/* Light mode */
+.app {
+    background-color: #ffffff;
+    color: black;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* Dark mode */
+.app.dark {
+    background-color: #121212;
+    color: white;
+}
+
+/* Notes */
+.app.dark .items {
+    color: black;
+}
+
+/* Inputs */
+.app.dark input,
+.app.dark textarea {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+}
