@@ -2,6 +2,8 @@ const express = require("express");
 const connectDB = require("./config/db");
 const cors = require("cors"); // allows React (5173) to talk to backend (5000)
 const Note = require("./models/Note");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const app = express();
 
