@@ -39,6 +39,6 @@ app.delete("/notes/:id", async (req, res) => {
     res.json({ message: "Note deleted" });
 });
 
-app.listen(5000, () => {
-    console.log(`Server is running on http://localhost:5000`);
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
