@@ -23,7 +23,7 @@ const NoteForm = ({ notes, setNotes, form, setForm }) => {
         if (form._id) {
             // ✅ UPDATE
             const res = await axios.put(
-                `http://localhost:5000/notes/${form._id}`,
+                `${import.meta.env.VITE_API_URL}/notes/${form._id}`,
                 {
                     title: form.title,
                     description: form.description
@@ -39,7 +39,7 @@ const NoteForm = ({ notes, setNotes, form, setForm }) => {
         } else {
             // ✅ CREATE 
             const res = await axios.post(
-                "http://localhost:5000/notes",
+                `${import.meta.env.VITE_API_URL}/notes`,
                 {
                     title: form.title,
                     description: form.description,

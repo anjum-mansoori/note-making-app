@@ -15,14 +15,17 @@ function App() {
   });
   const [search, setSearch] = useState("");
 
-  const [dark, setDark] = useState(() => { // This is called a lazy initializer function, React runs this ONLY ONCE (first render)
-    const saved = localStorage.getItem("darkMode"); // get saved value, Gets value from browser storage
-    return saved ? JSON.parse(saved) : false; // // if exists → use it, else → false “Check localStorage → if value exists use it → otherwise start with false”
+  const [dark, setDark] = useState(() => {
+    const saved = localStorage.getItem("darkMode")
+    return saved ? JSON.parse(saved) : false;
   });
 
   useEffect(() => {
-    axios.get("http://localhost:5000/notes")
-      .then(res => setNotes(res.data));
+    axios.get(`${import.meta.env.VITE_API_URL}/notes`)
+      .then(res => {
+        console.log("API DATA:", res.data);
+        setNotes(res.data);
+      });
   }, []);
 
   useEffect(() => {

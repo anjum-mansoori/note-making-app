@@ -5,7 +5,7 @@ import './NoteList.css'
 const NoteList = ({ notes, setNotes, form, setForm, search }) => {
 
     const deleteNote = async (id) => {
-        await axios.delete(`http://localhost:5000/notes/${id}`);
+        await axios.delete(`${import.meta.env.VITE_API_URL}/notes/${id}`);
         setNotes(prev => prev.filter(note => note._id !== id));
     };
 
